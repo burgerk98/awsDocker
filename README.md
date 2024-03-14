@@ -68,5 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # react-todo
+
 # awsDocker
+
+@@@@ 알게된 사실
+도커 이미지를 빌드하고 컨테이너를 실행한 후에는 로컬 시스템에서 npm run start명령이 아닌
+docker run -p 3000:3000 sha256:c1ef1a065ad624b8a5f5806febc563c10fbdf710d208de05dfbd71b2d182846a
+를 사용해야한다.
+
+하지만 매번 길게 치거나 아이디를 찾기엔 헷갈리니
+alias docker-start="docker run -p 3000:3000 sha256:c1ef1a065ad624b8a5f5806febc563c10fbdf710d208de05dfbd71b2d182846a
+와 같이 alias로 별칭을 지정해 원하는대로 설정해 사용할 수 있다.
+
+그 외에는 도커컴포즈, 스크립트작성, 도커 이미지 이름 설정 등이 있는데,,. 나에게는 별칭 설정 정도가 맞는 것 같다..
